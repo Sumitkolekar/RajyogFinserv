@@ -502,7 +502,7 @@ footer {
 
 .footer-top {
   position: relative;
-  background-image: url('/images/ffootback.jpeg');
+  background-image: url('../images/ffootback.jpeg');
   background-size: cover;
   background-position: center;
   color: white;
