@@ -120,7 +120,7 @@ nav ul li a:hover {
 
 
 .afterheader {
-  background: url('../images/main.jpg') no-repeat center center/cover;
+  background: url('images/main.jpg') no-repeat center center/cover;
   height: 432px;
   color: white;
   display: flex;
@@ -656,7 +656,7 @@ footer {
 
 .footer-top {
   position: relative;
-  background-image: url('../images/ffootback.jpeg');
+  background-image: url('images/ffootback.jpeg');
   background-size: cover;
   background-position: center;
   color: white;
@@ -813,3 +813,4 @@ footer {
     bottom: 15px;
   }
 } */
+
