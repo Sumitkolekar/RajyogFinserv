@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajyog Finserv</title>
+    <link rel="stylesheet" href="CssFiles/style.css">
+  <!-- font awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="index.js"></script>
+
+</head>
+<body>
+     <nav>
+    <div class="logo">
+      <img src="images/Rajlogo.png" alt="Rajyog Finserv Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">होम</a></li>
+      <li><a href="abt.html">संस्थेविषयी</a></li>
+      <li><a href="director.html">संचालक</a></li>
+      <li><a href="yojana.html">योजना</a></li>
+       <li><a href="gallery.html">गॅलरी</a></li>
+      <li><a href="contact.html">संपर्क</a></li>
+    </ul>
+  </nav>
+<section id="contact">
+  <div class="contact-container">
+    <!-- Left info boxes -->
+    <div class="contact-info">
+      <p class="infohead">"आमच्या टीमसोबत कनेक्ट व्हा "..!!</p>
+      <div class="info-box">
+        <!-- <h3>पत्ता</h3> -->
+        <i class="fa-solid fa-location-dot" style="font-size: 50px; color:black"></i>
+
+        <p>204,आदित्यसाई लॅंडमार्क,
+          <br>राममंदिर -सिविल रोड ,सांगली</p>
+      </div>
+      <div class="info-box">
+        <!-- <h3>ई-मेल</h3> -->
+        <i class="fa-solid fa-envelope" style="font-size: 50px; color:black"></i>
+        <p><a href="mailto:rajyogfinservho@gmail.com">rajyogfinservho@gmail.com</a></p>
+        </div>
+      <div class="info-box">
+        <!-- <h3>फोन</h3> -->
+        <i class="fa-solid fa-phone" style="font-size: 50px; color:black"></i>
+        <p>+919028085380/81/82/83/84</p>
+      </div>
+    </div>
+
+    <!-- Contact form -->
+    <form action="https://formsubmit.co/kiranpollard1212@gmail.com" id="contactForm" method="POST">
+      <h2>संपर्क</h2>
+      <input type="text" name="name" placeholder="तुमचं नाव" required>
+      <input type="number" name="phone" placeholder="मोबाइल नंबर" required>
+      <input type="email" name="email" placeholder="ई-मेल" required>
+      <select name="options">
+        <option value="" disabled selected>तुमच्या आवडीचा पर्याय</option>
+        <option value="सेव्हिंग /करंट खाते ">सेव्हिंग/करंट खाते/पिग्मि खाते</option>
+        <option value="एफडी /आरडी व इतर गुंतवणूक">मुदत ठेव (FD)</option>
+        <option value="एफडी /आरडी व इतर गुंतवणूक">आरडी व इतर गुंतवणूक</option>
+        <option value="एफडी /आरडी व इतर गुंतवणूक">डिमॅट/म्यूचुअल फंड/बॉण्ड</option>
+        <option value="एफडी /आरडी व इतर गुंतवणूक">SIP/SWP/LUMPSUM</option>
+        <option value="कर्ज ">कर्ज योजना</option>
+        <option value="विमा संरक्षण">विमा संरक्षण सेवा</option>
+        <option value="इतर">इतर</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="तुमचा संदेश"></textarea>
+
+       <!-- Spam protection: Honeypot field -->
+  <input type="text" name="_honey" class="hidden-field">
+
+  <!-- Disable CAPTCHA -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Redirect after submission -->
+  <input type="hidden" name="_next" value="https://YOUR-DOMAIN.com/thank-you.html">
+
+
+      <button type="submit">पाठवा</button>
+    </form>
+  </div>
+
+  <!-- Google Map -->
+  <div class="map-container">
+    
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3818.4152716244816!2d74.5716833!3d16.8553398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1198a8e5a9f17%3A0x47a94aad36255da4!2sAdityasai%20Landmark!5e0!3m2!1sen!2sin!4v1755142234699!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+     <!-- src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.738033755815!2d73.85674337499236!3d18.508938282586888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c06d45d03705%3A0x4b3f6b6b8c2d6b!2sPune!5e0!3m2!1sen!2sin!4v1693064064123!5m2!1sen!2sin"
+      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+  </div>
+</section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-content">
+        <div class="footer-content">
+          <div class="footer-box">
+            <div class="footimg">
+              <img src="images/Rajlogo.png" alt="rajyog">
+            </div>
+            <h2>Rajyog Finserv</h2>
+            <p>संचयात समृद्ध जीवन </p>
+            <a href="https://wa.me/919028085380">
+              <i class="fa-brands fa-whatsapp" style="font-size: 20px; color:white"></i>
+            </a>
+
+            <a href="http://www.facebook.com/share/16xhszQt3b">
+              <i class="fa-brands fa-facebook" style="font-size: 20px; color:white"></i>
+            </a>
+
+            <a href="https://www.instagram.com/rajyog_finserv?">
+              <i class="fa-brands fa-instagram" style="font-size: 20px; color:white"></i>
+            </a>
+
+            <a href="https://www.twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter" style="font-size: 20px; color:white"></i>
+            </a>
+          </div>
+          <div class="footer-box">
+            <h2>आपल्या सेवा </h2>
+            <ul>
+              <li><a href="yojana.html">चालू-बचत खाते </a></li>
+              <li><a href="yojana.html">ठेव </a></li>
+              <li><a href="yojana.html">विमा संरक्षण </a></li>
+              <li><a href="yojana.html">योजना व इतर </a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li><a href="home.html">होम </a></li>
+              <li><a href="abt.html">संस्थेवीषयी </a></li>
+              <li><a href="director.html">संचालक-मंडळ </a></li>
+              <li><a href="yojana.html">योजना </a></li>
+              <li><a href="contact.html">संपर्क </a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <h3>ऑफिस :</h3>
+             <a href="https://www.google.com/maps/place/Adityasai+Landmark/@16.8553398,74.5716833,17z/data=!4m18!1m11!4m10!1m3!2m2!1d74.5762752!2d16.8557094!1m5!1m1!1s0x3bc1198a8e5a9f17:0x47a94aad36255da4!2m2!1d74.5742582!2d16.8553398!3m5!1s0x3bc1198a8e5a9f17:0x47a94aad36255da4!8m2!3d16.8553398!4d74.5742582!16s%2Fg%2F11h1kcp_57?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D">
+              <i class="fa-solid fa-location-dot" style="font-size: 50px; color:white"></i>
+            </a>
+            <p>204,आदित्यसाई लॅंडमार्क <br>राममंदिर -सिविल रोड ,सांगली </p>
+            <p>Email: <a href="mailto:rajyogfinservho@gmail.com">rajyogfinservho@gmail.com </a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      || Copyright &copy; 2025 | Design and Developed by team SPARKIONS | All Rights Reserved ||
+
+      <div class="icons">
+        <a href="https://wa.me/919028085380">
+          <i class="fa-brands fa-whatsapp" style="font-size: 20px; color:white"></i>
+        </a>
+
+        <a href="http://www.facebook.com/share/16xhszQt3b">
+          <i class="fa-brands fa-facebook" style="font-size: 20px; color:white"></i>
+        </a>
+
+        <a href="https://www.instagram.com/rajyog_finserv?">
+          <i class="fa-brands fa-instagram" style="font-size: 20px; color:white"></i>
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fa-brands fa-twitter" style="font-size: 20px; color:white"></i>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
