@@ -150,9 +150,33 @@
     <span class="popup-close" onclick="document.querySelector('.floating-popup').style.display='none'">✖</span>
   </div>
 
+<!--Internship Popup -->
+<div class="internship-popup-overlay" id="internshipPopup">
+  <div class="internship-popup-box">
+    <span class="internship-popup-close" onclick="closeInternshipPopup()">✖</span>
+    <div class="internship-popup-badge">Internship Opportunity</div>
+    <h2>Apply for Internship</h2>
+    <p>
+      We are looking for enthusiastic interns to join our team.  
+      Gain real-world experience and boost your career!
+    </p>
+    <a href="https://forms.gle/YOUR_GOOGLE_FORM_LINK"
+       target="_blank"
+       class="internship-popup-btn">
+       Apply Now
+    </a>
+  </div>
+</div>
+
+<script>
+  function closeInternshipPopup() {
+  document.getElementById("internshipPopup").style.display = "none";
+}
+</script>
 
 </body>
 
 
 </html>
+
 
