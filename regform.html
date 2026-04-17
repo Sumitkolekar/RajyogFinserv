@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>खाते नोंदणी</title>
+
+<style>
+body {
+  font-family: Arial;
+  background: linear-gradient(135deg, #0f2027, #2c5364);
+}
+
+.container {
+  width: 420px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h2 {
+  text-align: center;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input[type="file"] {
+  border: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+<h2>खाते नोंदणी</h2>
+
+<form id="form">
+
+<input name="name" placeholder="पूर्ण नाव" required>
+<input name="mobile" placeholder="मोबाइल नंबर" required>
+<input name="email" placeholder="ईमेल" required>
+<input name="aadhaar" placeholder="आधार नंबर" required>
+<input name="pan" placeholder="पॅन नंबर" required>
+
+<select name="account">
+  <option>सेविंग अकाऊंट   </option>
+  <option>करंट अकाऊंट</option>
+  <option>पिग्मि</option>
+  <option>एफडी अकाऊंट </option>
+  <option>आरडी अकाऊंट </option>
+</select>
+
+<label>आधार अपलोड </label>
+<input type="file" id="aadhaarFile" required>
+
+<label>पॅन अपलोड</label>
+<input type="file" id="panFile" required>
+
+<label>पासपोर्ट साइज फोटो </label>
+<input type="file" id="photoFile" required>
+
+<label>सहीचा नमूना </label>
+<input type="file" id="signatureFile" required>
+
+<button type="submit">Submit</button>
+
+</form>
+</div>
+<script>
+
+  
+const scriptURL = "https://script.google.com/macros/s/AKfycbwxBzHX9e9vF_GcqQoHRDZOpbtjD3c_K5DGgBmPSEn-mqwyge7wMSQwK5C05ey6AH6Yqw/exec";
+
+document.getElementById("form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData.entries());
+
+  data.aadhaarFile = await toBase64(document.getElementById("aadhaarFile").files[0]);
+  data.panFile = await toBase64(document.getElementById("panFile").files[0]);
+  data.photoFile = await toBase64(document.getElementById("photoFile").files[0]);
+  data.signatureFile = await toBase64(document.getElementById("signatureFile").files[0]);
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: JSON.stringify(data)
+  })
+  .then(() => {
+    alert("Submitted Successfully ✅");
+    document.getElementById("form").reset();
+  })
+  .catch(() => alert("Error ❌"));
+});
+
+function toBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = error => reject(error);
+  });
+}
+
+</script>
+    
+</body>
+</html>
