@@ -509,6 +509,10 @@ form {
   max-width: 600px;
 }
 
+#contactForm h2 a{
+  color: inherit;
+  text-decoration: none;
+}
 input,
 textarea,
 select,
