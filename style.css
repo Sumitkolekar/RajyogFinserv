@@ -569,6 +569,60 @@ iframe {
 
 */
 
+/* Rajyog Finserv Family Survey */
+
+.family-survey-section {
+  width: 100%;
+  padding: 50px 20px;
+  background: #f5f7fa;
+}
+
+.family-survey-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.family-survey-heading h2 {
+  color: #173b68;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.family-survey-heading p {
+  color: #666;
+  font-size: 15px;
+}
+
+.family-survey-frame {
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background: white;
+}
+
+.family-survey-frame iframe {
+  display: block;
+  width: 100%;
+  height: 1900px;
+  border: none;
+  background: white;
+}
+
+@media (max-width: 600px) {
+  .family-survey-section {
+    padding: 30px 8px;
+  }
+
+  .family-survey-heading h2 {
+    font-size: 23px;
+  }
+
+  .family-survey-frame iframe {
+    height: 2500px;
+  }
+}
+
 /*Gallery styling*/
 
 gallery-page {
